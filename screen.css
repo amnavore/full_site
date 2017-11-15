@@ -1,0 +1,261 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Basic font/layout info*/
+html {
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+	text-rendering: optimizeLegibility;
+	text-align:justify;
+	font-size: 1.125em; /*18 / 16 = 1.125 */
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	line-height: 1.222222em; /*21.6 / 18 = 1.2 */
+	padding-top: 2.444444em; /* 44 / 18 = 2.4444444 em */
+	max-width: 100%;
+}
+p {
+ padding-bottom: 1.222222em;
+}
+
+h1 {
+ font-size: 2.778em; /* 50.02 px/ 18px = 2.778 */;
+ line-height: 1.319em; /* 66px / 50.02px = 1.319em; 3 gridlines (2) */
+ text-align: center;
+ padding-bottom: 2.778em
+}
+
+h2 {
+ margin: none;
+ padding: 0px;
+ text-align: center;
+ font-size: 2.778em;
+ padding-top: 1.222222em;
+ padding-bottom: 1.222222em;
+}
+
+h3 {
+ margin: none;
+ padding: 0px;
+ text-align: center;
+ font-size: 2.778em;
+ padding-top: 1.222222em;
+ padding-bottom: 1.222222em;
+}
+h4{
+	margin: none;
+	padding: 0px;
+	text-align: center;
+	font-size: 2.778em;
+	padding-top: 1.222222em;
+	padding-bottom: 1.222222em;
+}
+img {
+	display: block;
+	max-width: 100%;
+	margin:auto;
+	border-radius: 50%;
+	align:center;
+}
+p{
+  text-align:justify;
+	display:block;
+}
+
+/*section layout*/
+
+section {
+	width: 100%;
+  padding-left:5.0em;
+	padding-right:5.0em;
+  display: table;
+  margin: 0;
+  background-color: #FDFDFD;
+  height: 100vh;
+}
+section:nth-of-type(2n) {
+  background-color:#9EBE56
+}
+
+h2, h4{color:#FDFDFD}
+
+p{
+	color: #FDFDFD;
+	display:block;
+}
+
+cover{
+	max-width:100%;
+}
+
+/*media queries*/
+@media screen and (min-width: 280px) {
+  html{
+		font-size:1.0000em;
+	  line-height:1.2em;}
+	h1,h2,h3,h4{font-size:1.8em}
+	section{
+		padding-left:1.2em;
+		padding-right:1.2em;
+	}
+}
+
+@media screen and (min-width: 450px) {
+  html{
+	  font-size:1.125em;
+		line-height:1.222222em;}
+	h1,h2,h3,h4{font-size:2.778em;}
+	section{
+		padding-left:5.0;
+		padding-right:5.0em;
+		}
+	}
+@media screen and (min-width: 800px){
+  html{
+		font-size:1.5em;
+		line-height:1.65em;}
+	h1,h2,h3,h4{font-size:3.25em;}
+	section{
+		padding-left:25%;
+		padding-right:25%;}
+
+	}
+@media screen and (min-width: 1400px){
+  html{
+		font-size:1.75em;
+		line-height:1.9em;}
+	h1,h2,h3,h4{font-size:3.75em;}
+	section{
+		padding-left:25%;
+		padding-right:25%;}
+
+		}
+
+/*Contact section (made using perfecticons.com, since I don't know how to make them myself)*/
+@font-face {
+    font-family: 'si';
+    src: url('icons/socicon.eot');
+    src: url('icons/socicon.eot?#iefix') format('embedded-opentype'),
+         url('icons/socicon.woff') format('woff'),
+         url('icons/socicon.ttf') format('truetype'),
+         url('icons/socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(PATH_TO/socicon.svg) format(svg);
+    }
+}
+
+.soc {
+    overflow:hidden;
+    margin:0; padding:0;
+    list-style:none;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 44px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    color: #ffffff;
+    background-color: none;
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-linkedin {
+    background-color: #3371b7;
+}
+.soc-linkedin:before {
+    content:'\e049';
+}
+.soc-mail {
+    background-color: #000000;
+}
+.soc-mail:before {
+    content:'\e01f';
+}
+.soc-github {
+    background-color: #221e1b;
+}
+.soc-github:before {
+    content:'\e030';
+}
