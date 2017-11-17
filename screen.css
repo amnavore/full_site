@@ -133,6 +133,25 @@ cover{
 	max-width:100%;
 }
 
+contact{
+	height: 50vh;
+}
+
+#navigation a{
+	display:block;
+	width: 100%
+}
+#navigation li {
+  width: 33.333333%;
+  float: left;
+	list-style-type: none;
+	text-align: center;
+	padding-top: 0;
+}
+
+a{
+	background-color:#9EBE56;
+}
 /*media queries*/
 @media screen and (min-width: 280px) {
   html{
