@@ -83,6 +83,7 @@ p,li{
 	font-family:"Lato", arial, sans-serif;
 }
 
+
 /*section layout*/
 
 section {
@@ -106,7 +107,10 @@ p{
 p:nth-of-type(2n){color:#FDFDFD}
 
 li{color:#FDFDFD}
-
+.intro{
+	color:black;
+	text-align:center;
+}
 #contact{
 	height: 50vh;
 }
@@ -140,6 +144,7 @@ a{
 	section{
 		padding-left:1.2em;
 		padding-right:1.2em;
+		margin-right:0;
 	}
 }
 
