@@ -110,7 +110,6 @@ h2, h4{color:#FDFDFD}
 p{
 	color: black;
 }
-p:nth-of-type(2n){color:#FDFDFD}
 
 li{color:#FDFDFD}
 
@@ -118,7 +117,6 @@ li{color:#FDFDFD}
 	color:black;
 	text-align:center;
 }
-
 #navigation a{
 	display:block;
 	width: 100%;
@@ -155,7 +153,7 @@ iframe{
 		padding-right:7.5%;
 }
 
-@media screen and (min-width:350px){
+@media screen and (min-width: 350px){
 	html{
 		font-size:1.2em;
 		line-height:1.3em;}
@@ -165,6 +163,16 @@ iframe{
 		padding-left:10%;
 		padding-right:10%;
 }
+  .soc{
+		margin-left:20%;
+		margin-right:-80%;
+	}
+}
+@media screen and (min-width: 600px){
+	.soc{
+		margin-left:25%;
+		margin-right:-75%;
+	}
 }
 @media screen and (min-width:850px){
 	html{
@@ -176,6 +184,10 @@ iframe{
 		padding-left:10%;
 		padding-right:10%;
 }
+  .soc{
+		margin-left:35%;
+		margin-right:-65%;
+	}
 }
 @media screen and (min-width:1400px){
 	html{
@@ -187,6 +199,10 @@ iframe{
 		padding-left:15%;
 		padding-right:15%;
 }
+  .soc{
+		margin-left:35%;
+		margin-right:-65%;
+	}
 }
 
 /*Contact section (made using perfecticons.com, since I don't know how to make them myself)*/
@@ -199,7 +215,6 @@ iframe{
          url('icons/socicon.svg#icomoonregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -211,12 +226,12 @@ iframe{
 
 .soc {
     overflow:hidden;
-    margin:0; padding:0;
+		padding:0;
     list-style:none;
 }
 
 .soc li {
-    display:inline-block;
+    display: inline-block;
     *display:inline;
     zoom:1;
 }
