@@ -74,6 +74,10 @@ img {
 	padding-bottom: 1.22222em;
 }
 .img-circle{
+	display: block;
+	max-width: 100%;
+	margin:auto;
+	padding-bottom: 1.22222em;
   border-radius:50%;
 }
 p,li{
@@ -102,17 +106,14 @@ h2, h4{color:#FDFDFD}
 
 p{
 	color: black;
-	display:block;
 }
 p:nth-of-type(2n){color:#FDFDFD}
 
 li{color:#FDFDFD}
-.intro{
+
+	.intro{
 	color:black;
 	text-align:center;
-}
-#contact{
-	height: 50vh;
 }
 
 #navigation a{
@@ -142,19 +143,43 @@ a{
 	  line-height:1.2em;}
 	h1,h2,h3,h4{font-size:1.8em}
 	section{
-		padding-left:1.2em;
-		padding-right:1.2em;
-		margin-right:0;
-	}
+		width:90%;
+		padding-left:5%;
+		padding-right:5%;
 }
 
-		}
-@media screen and (max-width: 306px){
-  .soc li{
-		width: 75px;
-		height: 75px;
-		line-height: 75px;
-	}
+@media screen and (min-width:350px){
+	html{
+		font-size:1.2em;
+		line-height:1.3em;}
+	h1,h2,h3,h4{font-size:2.0em}
+	section{
+		width:80%;
+		padding-left:10%;
+		padding-right:10%;
+}
+}
+@media screen and (min-width:850px){
+	html{
+		font-size:1.2em;
+		line-height:1.3em;}
+	h1,h2,h3,h4{font-size:3.0em}
+	section{
+		width:80%;
+		padding-left:10%;
+		padding-right:10%;
+}
+}
+@media screen and (min-width:1400px){
+	html{
+		font-size:1.4em;
+		line-height:1.5em;}
+	h1,h2,h3,h4{font-size:3.5em}
+	section{
+		width:70vw;
+		padding-left:15%;
+		padding-right:15%;
+}
 }
 
 /*Contact section (made using perfecticons.com, since I don't know how to make them myself)*/
@@ -206,9 +231,9 @@ a{
     display:block;
     position: relative;
     z-index: 1;
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
     font-size: 44px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
