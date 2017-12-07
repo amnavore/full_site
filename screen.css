@@ -54,12 +54,8 @@ html {
 	text-rendering: optimizeLegibility;
 	text-align:justify;
 	font-size: 1.125em; /*18 / 16 = 1.125 */
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	line-height: 1.222222em; /*21.6 / 18 = 1.2 */
 	max-width: 100%;
-}
-p {
- padding-bottom: 1.222222em;
 }
 
 h1,h2,h3,h4 {
@@ -68,6 +64,7 @@ h1,h2,h3,h4 {
  text-align: center;
  padding-bottom: 1.2222em;
  padding-top:1.22222em;
+ font-family:'Alice', serif;
 }
 
 img {
@@ -80,6 +77,8 @@ img {
 p{
   text-align:justify;
 	display:block;
+	padding-bottom: 1.222222em;
+	font-family:"Lato", arial, sans-serif;
 }
 
 /*section layout*/
