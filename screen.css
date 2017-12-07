@@ -71,10 +71,9 @@ img {
 	display: block;
 	max-width: 100%;
 	margin:auto;
-	align:center;
 	padding-bottom: 1.22222em;
 }
-p{
+p,li{
   text-align:justify;
 	display:block;
 	padding-bottom: 1.222222em;
@@ -170,6 +169,13 @@ a{
 		padding-right:20%;}
 
 		}
+@media screen and (max-width: 306px){
+  .soc li{
+		width: 75px;
+		height: 75px;
+		line-height: 75px;	
+	}
+}
 
 /*Contact section (made using perfecticons.com, since I don't know how to make them myself)*/
 @font-face {
