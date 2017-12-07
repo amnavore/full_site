@@ -73,6 +73,9 @@ img {
 	margin:auto;
 	padding-bottom: 1.22222em;
 }
+.img-circle{
+  border-radius:50%;
+}
 p,li{
   text-align:justify;
 	display:block;
@@ -127,6 +130,7 @@ li{color:#FDFDFD}
 a{
 	background-color:#9EBE56;
 }
+
 /*media queries*/
 @media screen and (min-width: 280px) {
   html{
@@ -173,7 +177,7 @@ a{
   .soc li{
 		width: 75px;
 		height: 75px;
-		line-height: 75px;	
+		line-height: 75px;
 	}
 }
 
