@@ -101,6 +101,9 @@ section {
 section:nth-of-type(2n) {
   background-color:#9EBE56
 }
+section:nth-of-type(4n){
+	height: 30vh;
+}
 
 h2, h4{color:#FDFDFD}
 
@@ -131,21 +134,25 @@ li{color:#FDFDFD}
 	text-align: center;
 	padding-top: 0;
 }
-
 a{
 	background-color:#9EBE56;
 }
 
+iframe{
+	width:80vw;
+	height:60vh;
+}
+
 /*media queries*/
-@media screen and (min-width: 280px) {
+@media screen and (min-width: 279px) {
   html{
 		font-size:1.0000em;
 	  line-height:1.2em;}
 	h1,h2,h3,h4{font-size:1.8em}
 	section{
-		width:90%;
-		padding-left:5%;
-		padding-right:5%;
+		width:85%;
+		padding-left:7.5%;
+		padding-right:7.5%;
 }
 
 @media screen and (min-width:350px){
